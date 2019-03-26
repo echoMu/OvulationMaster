@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/preview_mock"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:layout_height="135dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="请对齐虚线"
+                android:textColor="@color/ovulation_trip_yellow_color"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:text="实际 对照"
+                android:textColor="@color/ovulation_trip_yellow_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ovulation_shizhi" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_crop_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="33dp"
+                android:background="@color/preview_mock" />
+
+            <FrameLayout
+                android:id="@+id/fl_corp_square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/view_line2"
+                android:layout_toRightOf="@+id/view_line">
+
+                <ImageView
+                    android:id="@+id/camera_crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_33"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ovulation_crop_pre" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/dp_24"
+                    android:text="试纸宽度"
+                    android:textColor="@color/tip_red"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/view_line2"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/preview_mock" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/preview_mock" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_base_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="180dp"
+        android:src="@mipmap/ovulation_camera_line" />
+</FrameLayout>

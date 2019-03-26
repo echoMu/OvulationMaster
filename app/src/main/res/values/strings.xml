@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OvulationMaster</string>
+    <string name="ovulation_camera_trip">友情提示：\n如果经常手抖觉得不好拍，可以把手靠在桌子上拍得更稳哦~</string>
+    <string name="ovulation_crop_trip">友情提示：\n使用手势操作实拍试纸图</string>
+</resources>

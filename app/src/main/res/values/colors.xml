@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--排卵试纸提示-->
+    <color name="medal_name_color">#FFCC67</color>
+    <color name="ovulation_trip_yellow_color">#DDE400</color>
+    <color name="ovulation_trip_white_color">#FEFEFE</color>
+    <color name="preview_mock">#9A000000</color>
+    <color name="ovulation_blue_bg">#8FB5FF</color>
+    <color name="tip_red">#ff3644</color>
+    <color name="white">#FFFFFF</color>
+</resources>
